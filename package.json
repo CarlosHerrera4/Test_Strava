@@ -1,0 +1,28 @@
+{
+  "name": "teststrava",
+  "version": "1.0.0",
+  "description": "Test with the strava api",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "strava-v3": "^1.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+  },
+  "scripts": {
+    "start" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MundoGister/Test_Strava.git"
+  },
+  "author": "Carlos Herrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MundoGister/Test_Strava/issues"
+  },
+  "homepage": "https://github.com/MundoGister/Test_Strava#readme"
+}
