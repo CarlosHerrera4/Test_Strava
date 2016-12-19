@@ -11,24 +11,9 @@ app.use(bodyParser.json())
 
 const strava = require('strava-v3');
 
-// strava.athlete.listRoutes({
-// 	"id":"8519415",
-// 	"access_token": "4005e5f9913ce8fcdf45ec1cb3a5b383f23c6ef"
-//
-// }, function(err, payload) {
-// 	if (err) {
-// 		console.log(err);
-// 	} else {
-// 		console.log(payload);
-// 	}
-// 	console.log('Venga va');
-//
-// });
-
 app.get('/actividad', (req, res) => {
 	strava.activities.get({
-		"id":"750681983",
-		"access_token": "4005e5f9913ce8fcdf45ec1cb3a5b383f23c6ef3"
+		// Id & Access_token
 	}, function(err, payload) {
 		//console.log(payload)
 		//console.log(err)
@@ -40,18 +25,5 @@ app.get('/actividad', (req, res) => {
 
 app.listen(port, function() {
 	console.log(`API REST corriendo en http://localhost:${port}`)
-	// strava.activities.get({
-	// 	"id":"750681983",
-	// 	"access_token": "4005e5f9913ce8fcdf45ec1cb3a5b383f23c6ef3"
-	// }, function(err, payload) {
-	// 	console.log(payload)
-	// 	console.log(err)
-	// 	// if (err) {
-	// 	// 	console.log(err);
-	// 	// } else {
-	// 	// 	console.log(payload);
-	// 	// }
-	// 	console.log('Venga va');
-	// });
-	// console.log("oleeeee")
+
 });
